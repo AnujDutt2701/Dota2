@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="API_URL">http://api.steampowered.com</string>
+    <string name="API_KEY">key=7BEB0576A4B358724E2934794DFAFAF2</string>
+    <string name="API_INTERFACE_ITEMS">IEconDOTA2_570/GetGameItems/v1</string>
+    <string name="ITEMS_IMAGES_LINK">http://cdn.dota2.com/apps/dota2/images/items/{0}_lg.png</string>
+
+</resources>
