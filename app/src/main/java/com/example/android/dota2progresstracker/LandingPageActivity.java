@@ -18,7 +18,7 @@ public class LandingPageActivity extends AppCompatActivity {
 
     public void showLearningPage (View view)
     {
-        Intent intent = new Intent(this, ItemActivity.class);
+        Intent intent = new Intent(this, LearnDotaActivity.class);
         startActivity(intent);
     }
 }

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hero"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Headings"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/hero_name_heading" />
+
+        <TextView
+            android:id="@+id/hero_name"
+            style="@style/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Headings"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/hero_role_heading" />
+
+        <TextView
+            android:id="@+id/hero_role"
+            style="@style/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Headings"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/hero_ability_1_heading" />
+
+        <TextView
+            android:id="@+id/hero_ability_1"
+            style="@style/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Headings"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/hero_ability_2_heading" />
+
+        <TextView
+            android:id="@+id/hero_ability_2"
+            style="@style/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Headings"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/hero_ability_3_heading" />
+
+        <TextView
+            android:id="@+id/hero_ability_3"
+            style="@style/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Headings"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/hero_ability_4_heading" />
+
+        <TextView
+            android:id="@+id/hero_ability_4"
+            style="@style/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -19,8 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProgressActivity" />
-        <activity android:name=".ItemActivity"></activity>
+        <activity android:name=".ItemActivity" />
+        <activity android:name=".HeroActivity" />
+        <activity
+            android:name=".LearnDotaActivity"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".ItemDetailActivity"></activity>
     </application>
 
 </manifest>

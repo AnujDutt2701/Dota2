@@ -3,6 +3,1410 @@
     <string name="API_URL">http://api.steampowered.com</string>
     <string name="API_KEY">key=7BEB0576A4B358724E2934794DFAFAF2</string>
     <string name="API_INTERFACE_ITEMS">IEconDOTA2_570/GetGameItems/v1</string>
-    <string name="ITEMS_IMAGES_LINK">http://cdn.dota2.com/apps/dota2/images/items/{0}_lg.png</string>
+    <string name="API_INTERFACE_HEROES">IEconDOTA2_570/GetHeroes/v1</string>
+    <string name="ITEMS_IMAGES_LINK_2">_lg.png</string>
+    <string name="ITEMS_IMAGES_LINK_1">http://cdn.dota2.com/apps/dota2/images/items/</string>
+    <string name="ITEM_JSON">{\"items\": [
+			{
+				\"id\": 1,
+				\"desc\" : \"Restores mana to the target unit over time. If the unit is attacked, the effect is lost.\",
+				\"stats\" : [{\"0\" : \"TOTAL MANA RESTORED: 190\"},{\"1\" : \"DURATION: 50\"}]
+			},
+			{
+				\"id\": 2,
+				\"desc\" : \"Gives +9 damage.\",
+				\"stats\" : [{\"0\" : \"+9 damage\"}]
+			},
+			{
+				\"id\": 3,
+				\"name\": \"item_broadsword\",
+				\"desc\" : \"Gives +18 damage.\",
+				\"stats\" : [{\"0\" : \"+18 damage\"}]
+			},
+			{
+				\"id\": 4,
+				\"name\": \"item_chainmail\",
+				\"desc\" : \"Gives +5 armor\",
+				\"stats\" : [{\"0\" : \"+5 armor\"}]
+			},
+			{
+				\"id\": 5,
+				\"name\": \"item_claymore\",
+				\"desc\" : \"Gives +21 damage\",
+				\"stats\" : [{\"0\" : \"+21 damage\"}]
+			},
+			{
+				\"id\": 6,
+				\"name\": \"item_helm_of_iron_will\",
+				\"desc\" : \"+5 armor +3 HP regeneration\",
+				\"stats\" : [{\"0\" : \"+5 armor\"},{\"1\" : \"+3 HP regeneration\"}]
+			},
+			{
+				\"id\": 7,
+				\"name\": \"item_javelin\",
+				\"desc\" : \"Gives +10 damage. Passive: Pierce - Grants each attack a chance to deal bonus damage.\",
+				\"stats\" : [{\"0\" : \"+10 damage\"},{\"1\" : \"Chance to pierce : 25%\"},{\"2\" : \"Pierce damage : 85\"}]
+			},
+			{
+				\"id\": 8,
+				\"name\": \"item_mithril_hammer\",
+				\"desc\" : \"Gives +24 damage.\",
+				\"stats\" : [{\"0\" : \"+24 damage\"}]
+			},
+			{
+				\"id\": 9,
+				\"name\": \"item_platemail\",
+				\"desc\" : \"Gives +10 armor.\",
+				\"stats\" : [{\"0\" : \"+10 armor\"}]
+			},
+			{
+				\"id\": 10,
+				\"name\": \"item_quarterstaff\",
+				\"desc\" : \"Gives +10 damage and +10 attack speed.\",
+				\"stats\" : [{\"0\" : \"+10 damage\"},{\"1\" : \"+10 attack speed\"}]
+			},
+			{
+				\"id\": 11,
+				\"name\": \"item_quelling_blade\",
+				\"desc\" : \"Active: Chop Tree/Ward - Destroy a target tree or ward. Chop cast range is increased when targetting wards. Passive: Quell - Increases attack damage against non-hero units, based on whether the equipped hero is ranged or melee. Does not provide bonus damage against Roshan.\",
+				\"stats\" : [{\"0\" : \"QUELL MELEE DAMAGE: 140%\"},{\"1\" : \"QUELL RANGED DAMAGE: 115%\"},{\"2\" : \"CHOP TREE CAST RANGE: 350\"},{\"3\" : \"CHOP WARD CAST RANGE: 450\"}]
+			},
+			{
+				\"id\": 237,
+				\"name\": \"item_faerie_fire\",
+				\"desc\" : \"Consume the Faerie Fire to instantly restore 75 HP\",
+				\"stats\" : [{\"0\" : \"+2 damage\"},{\"1\" : \"HEALTH RESTORED: 75\"},{\"2\" : \"Pierce damage : 85\"}]
+			},
+			{
+				\"id\": 265,
+				\"name\": \"item_infused_raindrop\",
+				\"desc\" : \"Passive: Consumes a charge to block 120 magic damage from damage instances over 50 damage. Comes with 5 charges. When the charges are gone, the item disappear.\",
+				\"stats\" : [{\"0\" : \"MANA REGEN: 0.85\"},{\"1\" : \"MAGIC DAMAGE BLOCK: 120\"},{\"2\" : \"INITIAL CHARGES: 5\"}]
+			},
+			{
+				\"id\": 244,
+				\"name\": \"item_wind_lace\",
+				\"desc\" : \"Passive: Gives increased movement speed.\",
+				\"stats\" : [{\"0\" : \"+20 movement speed\"}]
+			},
+			{
+				\"id\": 12,
+				\"name\": \"item_ring_of_protection\",
+				\"desc\" : \"Gives +2 armor\",
+				\"stats\" : [{\"0\" : \"+2 armor\"}]
+			},
+			{
+				\"id\": 182,
+				\"name\": \"item_stout_shield\",
+				\"desc\" : \"Passive: Damage Block - Gives a chance to block damage based on whether the equipped hero is melee or ranged.\",
+				\"stats\" : [{\"0\" : \"MELEE DAMAGE BLOCK: 16\"},{\"1\" : \"RANGED DAMAGE BLOCK: 8\"},{\"2\" : \"BLOCK CHANCE: 50%\"}]
+			},
+			{
+				\"id\": 246,
+				\"name\": \"item_recipe_moon_shard\",
+				\"desc\" : \"Recipe for Moon shard\",
+				\"stats\" : []
+			},
+			{
+				\"id\": 247,
+				\"name\": \"item_moon_shard\",
+				\"desc\" : \"Use: Consume the Moon Shard to permanently gain 60 attack speed. Does not stack. Passive: Shade Sight - Grants 250 bonus night vision.\",
+				\"stats\" : [{\"0\" : \"+ 120 attack speed\"},{\"1\" : \"SHADE BONUS NIGHT VISION: 250\"},{\"2\" : \"CONSUME ATTACK SPEED: 60\"}]
+			},
+			{
+				\"id\": 13,
+				\"name\": \"item_gauntlets\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"MANA REGEN: 0.85\"},{\"1\" : \"MAGIC DAMAGE BLOCK: 120\"},{\"2\" : \"INITIAL CHARGES: 5\"}]
+			},
+			{
+				\"id\": 14,
+				\"name\": \"item_slippers\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"MANA REGEN: 0.85\"},{\"1\" : \"MAGIC DAMAGE BLOCK: 120\"},{\"2\" : \"INITIAL CHARGES: 5\"}]
+			},
+			{
+				\"id\": 15,
+				\"name\": \"item_mantle\",
+				\"desc\" : \"Gives +3 strength\",
+				\"stats\" : [{\"0\" : \"+3 strength\"}]
+			},
+			{
+				\"id\": 16,
+				\"name\": \"item_branches\",
+				\"desc\" : \"Gives +1 to all attributes\",
+				\"stats\" : [{\"0\" : \"+ 1 All Attributes\"}]
+			},
+			{
+				\"id\": 17,
+				\"name\": \"item_belt_of_strength\",
+				\"desc\" : \"Gives +6 strength.\",
+				\"stats\" : [{\"0\" : \"+6 strength\"}]
+			},
+			{
+				\"id\": 18,
+				\"name\": \"item_boots_of_elves\",
+				\"desc\" : \"Gives +6 agility.\",
+				\"stats\" : [{\"0\" : \"+6 agility\"}]
+			},
+			{
+				\"id\": 19,
+				\"name\": \"item_robe\",
+				\"desc\" : \"Gives +6 intelligence\",
+				\"stats\" : [{\"0\" : \"+6 intelligence\"}]
+			},
+			{
+				\"id\": 20,
+				\"name\": \"item_circlet\",
+				\"desc\" : \"Gives +2 to all attributes.\",
+				\"stats\" : [{\"0\" : \"+2 to all attributes\"}]
+			},
+			{
+				\"id\": 21,
+				\"name\": \"item_ogre_axe\",
+				\"desc\" : \"Gives +10 strength.\",
+				\"stats\" : [{\"0\" : \"+10 strength\"}]
+			},
+			{
+				\"id\": 22,
+				\"name\": \"item_blade_of_alacrity\",
+				\"desc\" : \"Gives +10 agility\",
+				\"stats\" : [{\"0\" : \"+10 agility\"}]
+			},
+			{
+				\"id\": 23,
+				\"name\": \"item_staff_of_wizardry\",
+				\"desc\" : \"Gives +10 intelligence.\",
+				\"stats\" : [{\"0\" : \"+10 intelligence\"}]
+			},
+			{
+				\"id\": 24,
+				\"name\": \"item_ultimate_orb\",
+				\"desc\" : \"Gives +10 to all attributes.\",
+				\"stats\" : [{\"0\" : \"+10 to all attributes\"}]
+			},
+			{
+				\"id\": 25,
+				\"name\": \"item_gloves\",
+				\"desc\" : \"Gives +20 attack speed\",
+				\"stats\" : [{\"0\" : \"+20 attack speed\"}]
+			},
+			{
+				\"id\": 26,
+				\"name\": \"item_lifesteal\",
+				\"desc\" : \"Passive: Lifesteal - Heals the attacker for a percentage of attack damage dealt.\",
+				\"stats\" : [{\"0\" : \"LIFESTEAL : 15%\"}]
+			},
+			{
+				\"id\": 27,
+				\"name\": \"item_ring_of_regen\",
+				\"desc\" : \"Gives +2 HP regeneration\",
+				\"stats\" : [{\"0\" : \"+2 HP regeneration\"}]
+			},
+			{
+				\"id\": 28,
+				\"name\": \"item_sobi_mask\",
+				\"desc\" : \"Gives 50% mana regeneration\",
+				\"stats\" : [{\"0\" : \"50% mana regeneration\"}]
+			},
+			{
+				\"id\": 29,
+				\"name\": \"item_boots\",
+				\"desc\" : \"Gives +45 movement speed.\",
+				\"stats\" : [{\"0\" : \"+45 movement speed\"}]
+			},
+			{
+				\"id\": 30,
+				\"name\": \"item_gem\",
+				\"desc\" : \"Passive: True Sight - Adds the ability to see invisible units and wards to any allied vision within its carrier\'s range. Dropped on death, and cannot be destroyed.\",
+				\"stats\" : [{\"0\" : \"TRUE SIGHT RADIUS: 900\"}]
+			},
+			{
+				\"id\": 31,
+				\"name\": \"item_cloak\",
+				\"desc\" : \"Gives +15% spell resistance\",
+				\"stats\" : [{\"0\" : \"+15% spell resistance\"}]
+			},
+			{
+				\"id\": 32,
+				\"name\": \"item_talisman_of_evasion\",
+				\"desc\" : \"Gives +25% evasion.\",
+				\"stats\" : [{\"0\" : \"+25% evasion\"}]
+			},
+			{
+				\"id\": 33,
+				\"name\": \"item_cheese\",
+				\"desc\" : \"Gives +10000 hp and +2500 mana instantly\",
+				\"stats\" : []
+			},
+			{
+				\"id\": 34,
+				\"name\": \"item_magic_stick\",
+				\"desc\" : \"Active: Energy Charge - Instantly restores health and mana based on the number of charges stored. Gains a charge (max 10) whenever a nearby visible enemy uses an ability.\",
+				\"stats\" : [{\"0\" : \"HEALTH/MANA PER CHARGE: 15\"}]
+			},
+			{
+				\"id\": 35,
+				\"name\": \"item_recipe_magic_wand\",
+				\"desc\" : \"Recipe for magic wand\",
+				\"stats\" : []
+			},
+			{
+				\"id\": 36,
+				\"name\": \"item_magic_wand\",
+				\"desc\" : \"Active: Energy Charge - Instantly restores health and mana based on the number of charges stored. Gains a charge (max 17) whenever a nearby visible enemy uses an ability.\",
+				\"stats\" : [{\"0\" : \"+4 to all attributes\"},{\"1\" : \"HEALTH/MANA PER CHARGE: 15\"}]
+			},
+			{
+				\"id\": 37,
+				\"name\": \"item_ghost\",
+				\"desc\" : \"Active: Ghost Form - Enter ghost form, becoming immune to physical damage, yet unable to attack and taking 40% extra magic damage. Using a Town Portal Scroll or Boots of Travel will not dispel Ghost Form.\",
+				\"stats\" : [{\"0\" : \"+ 5 All Attributes\"},{\"1\" : \"GHOST DURATION: 4\"},{\"2\" : \"GHOST ADDED MAGIC DAMAGE: 40%\"}]
+			},
+			{
+				\"id\": 38,
+				\"name\": \"item_clarity\",
+				\"desc\" : \"Use: Restores mana to the target unit over time. If the unit is attacked, the effect is lost.\",
+				\"stats\" : [{\"0\" : \"TOTAL MANA RESTORED: 190\"},{\"1\" : \"DURATION: 50\"}]
+			},
+			{
+				\"id\": 216,
+				\"name\": \"item_enchanted_mango\",
+				\"desc\" : \"Consume the mango to instantly restore 150 mana.\",
+				\"stats\" : [{\"0\" : \"MANA RESTORED: 150\"}]
+			},
+			{
+				\"id\": 39,
+				\"name\": \"item_flask\",
+				\"desc\" : \"Restores health to the target unit over time. If the unit is attacked, the effect is lost.\",
+				\"stats\" : [{\"0\" : \"DURATION: 8\"},{\"1\" : \"HEALTH RESTORED: 400\"}]
+			},
+			{
+				\"id\": 40,
+				\"name\": \"item_dust\",
+				\"desc\" : \"Reveals and slows invisible Heroes in a nearby area.\",
+				\"stats\" : [{\"0\" : \"DURATION: 12\"},{\"1\" : \"RADIUS: 1050\"},{\"2\" : \"SLOW: 20%\"}]
+			},
+			{
+				\"id\": 41,
+				\"name\": \"item_bottle\",
+				\"desc\" : \"Regenerate - Consumes a charge to restore Health and Mana over time. Healing stops if attacked. Bottle can be refilled at your team\'s fountain. Runes can be stored in the Bottle for later use, and are activated automatically after 2 minutes. If Bottle does not have full charges and is placed on a courier, the courier will move 30% slower.\",
+				\"stats\" : [{\"0\" : \"HEALTH RESTORED: 90\"},{\"1\" : \"MANA RESTORED: 60\"},{\"2\" : \"DURATION: 2.5\"}]
+			},
+			{
+				\"id\": 42,
+				\"name\": \"item_ward_observer\",
+				\"desc\" : \"Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes.\",
+				\"stats\" : [{\"0\" : \"VISION RANGE: 1600\"},{\"1\" : \"DURATION (MINUTES): 6\"}]
+			},
+			{
+				\"id\": 43,
+				\"name\": \"item_ward_sentry\",
+				\"desc\" : \"Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes.\",
+				\"stats\" : [{\"0\" : \"TRUE SIGHT RANGE: 850\"},{\"1\" : \"DURATION (MINUTES): 4\"}]
+			},
+			{
+				\"id\": 217,
+				\"name\": \"item_recipe_ward_dispenser\",
+				\"desc\" : \"Plants an Observer Ward, an invisible watcher that gives vision of its surrounding area to your team. Lasts 6 minutes.\",
+				\"stats\" : [{\"0\" : \"VISION RANGE: 1600\"},{\"1\" : \"DURATION (MINUTES): 6\"}]
+			},
+			{
+				\"id\": 218,
+				\"name\": \"item_ward_dispenser\",
+				\"desc\" : \"Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within its range. Lasts 4 minutes.\",
+				\"stats\" : [{\"0\" : \"TRUE SIGHT RANGE: 850\"},{\"1\" : \"DURATION (MINUTES): 4\"}]
+			},
+			{
+				\"id\": 44,
+				\"name\": \"item_tango\",
+				\"desc\" : \"Eat a Tree or Ward - Consume a target tree or ward to gradually restore health.\",
+				\"stats\" : [{\"0\" : \"EAT TREE HEALTH RESTORED: 115\"},{\"1\" : \"EAT WARD HEALTH RESTORED: 230\"},{\"2\" : \"EAT WARD CAST RANGE: 450\"},{\"3\" : \"HEAL DURATION: 16 \"}]
+			},
+			{
+				\"id\": 241,
+				\"name\": \"item_tango_single\",
+				\"desc\" : \"\",
+				\"stats\" : []
+			},
+			{
+				\"id\": 45,
+				\"name\": \"item_courier\",
+				\"desc\" : \"Deploy Courier - Deploys a creature to carry items to and from your team\'s base.\",
+				\"stats\" : []
+			},
+			{
+				\"id\": 46,
+				\"name\": \"item_tpscroll\",
+				\"desc\" : \"Teleports you to a target friendly building. Double-click to teleport to your team\'s base fountain.\",
+				\"stats\" : []
+			},
+			{
+				\"id\": 47,
+				\"name\": \"item_recipe_travel_boots\",
+				\"desc\" : \"Teleports you to an allied non-hero unit or structure. Double-click to teleport to your team\'s base fountain.\",
+				\"stats\" : []
+			},
+			{
+				\"id\": 219,
+				\"name\": \"item_recipe_travel_boots_2\",
+				\"desc\" : \"Allows you to teleport to allied heroes.\",
+				\"stats\" : []
+			},
+			{
+				\"id\": 48,
+				\"name\": \"item_travel_boots\",
+				\"desc\" : \"Teleports you to an allied non-hero unit or structure. Double-click to teleport to your team\'s base fountain.\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 220,
+				\"name\": \"item_travel_boots_2\",
+				\"desc\" : \"Allows you to teleport to allied heroes.\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 49,
+				\"name\": \"item_recipe_phase_boots\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 50,
+				\"name\": \"item_phase_boots\",
+				\"desc\" : \"Gives increased movement speed and lets you move through units. The increased movement speed is based on whether the equipped hero is melee or ranged.\",
+				\"stats\" : [{\"0\" : \"+ 45 Movement Speed\"},{\"1\" : \"+ 24 Damage\"}]
+			},
+			{
+				\"id\": 51,
+				\"name\": \"item_demon_edge\",
+				\"desc\" : \"Gives +46 damage.\",
+				\"stats\" : [{\"0\" : \"+46 damage.\"}]
+			},
+			{
+				\"id\": 52,
+				\"name\": \"item_eagle\",
+				\"desc\" : \"Gives +25 agility.\",
+				\"stats\" : [{\"0\" : \"+25 agility\"}]
+			},
+			{
+				\"id\": 53,
+				\"name\": \"item_reaver\",
+				\"desc\" : \"Gives +25 strength.\",
+				\"stats\" : [{\"0\" : \"+25 strength\"}]
+			},
+			{
+				\"id\": 54,
+				\"name\": \"item_relic\",
+				\"desc\" : \"Gives +60 damage\",
+				\"stats\" : [{\"0\" : \"+60 damage\"}]
+			},
+			{
+				\"id\": 55,
+				\"name\": \"item_hyperstone\",
+				\"desc\" : \"Gives +55 attack speed.\",
+				\"stats\" : [{\"0\" : \"+55 attack speed\"}]
+			},
+			{
+				\"id\": 56,
+				\"name\": \"item_ring_of_health\",
+				\"desc\" : \"Gives +6 HP regeneration.\",
+				\"stats\" : [{\"0\" : \"+6 HP regeneration\"}]
+			},
+			{
+				\"id\": 57,
+				\"name\": \"item_void_stone\",
+				\"desc\" : \"Gives 100% mana regeneration.\",
+				\"stats\" : [{\"0\" : \"100% mana regeneration\"}]
+			},
+			{
+				\"id\": 58,
+				\"name\": \"item_mystic_staff\",
+				\"desc\" : \"Gives +25 intelligence.\",
+				\"stats\" : [{\"0\" : \"+25 intelligence\"}]
+			},
+			{
+				\"id\": 59,
+				\"name\": \"item_energy_booster\",
+				\"desc\" : \"Gives + 250 mana\",
+				\"stats\" : [{\"0\" : \"+ 250 mana\"}]
+			},
+			{
+				\"id\": 60,
+				\"name\": \"item_point_booster\",
+				\"desc\" : \"Gives 175 health and mana\",
+				\"stats\" : [{\"0\" : \"+ 175 health\"},{\"1\" : \"+ 175 mana\"}]
+			},
+			{
+				\"id\": 61,
+				\"name\": \"item_vitality_booster\",
+				\"desc\" : \"Gives +250 health\",
+				\"stats\" : [{\"0\" : \"+250 health\"}]
+			},
+			{
+				\"id\": 62,
+				\"name\": \"item_recipe_power_treads\",
+				\"desc\" : \"Changes selected attribute between Strength, Agility and Intelligence.\",
+				\"stats\" : [{\"0\" : \"+ 45 Movement Speed\"},{\"1\" : \"+ 9 Selected Attribute\"},{\"2\" : \"+ 25 Attack Speed\"}]
+			},
+			{
+				\"id\": 63,
+				\"name\": \"item_power_treads\",
+				\"desc\" : \"Changes selected attribute between Strength, Agility and Intelligence.\",
+				\"stats\" : [{\"0\" : \"+ 45 Movement Speed\"},{\"1\" : \"+ 9 Selected Attribute\"},{\"2\" : \"+ 25 Attack Speed\"}]
+			},
+			{
+				\"id\": 64,
+				\"name\": \"item_recipe_hand_of_midas\",
+				\"desc\" : \"Kills a non-hero target for 190 gold and 2.5x experience. Cannot be used on Ancient Creeps.\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 65,
+				\"name\": \"item_hand_of_midas\",
+				\"desc\" : \"Kills a non-hero target for 190 gold and 2.5x experience. Cannot be used on Ancient Creeps.\",
+				\"stats\" : [{\"0\" : \"+ 30 Attack Speed\"},{\"1\" : \"TRANSMUTE CAST RANGE: 600\"}]
+			},
+			{
+				\"id\": 66,
+				\"name\": \"item_recipe_oblivion_staff\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"+ 30 Attack Speed\"},{\"1\" : \"TRANSMUTE CAST RANGE: 600\"}]
+			},
+			{
+				\"id\": 67,
+				\"name\": \"item_oblivion_staff\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 68,
+				\"name\": \"item_recipe_pers\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 69,
+				\"name\": \"item_pers\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"+ 6 Intelligence\"},{\"1\" : \"+ 10 Attack Speed\"},{\"2\" : \"+ 15 Damage\"},{\"3\" : \"+ 75% Mana Regeneration \"}]
+			},
+			{
+				\"id\": 70,
+				\"name\": \"item_recipe_poor_mans_shield\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 71,
+				\"name\": \"item_poor_mans_shield\",
+				\"desc\" : \" Blocks physical attack damage based on whether the equipped hero is ranged or melee. Poor Man\'s Shield will always block attacks from enemy Heroes, but has a 53% chance to block damage from creeps.\",
+				\"stats\" : [{\"0\" : \"+ 6 Agility\"},{\"1\" : \"MELEE DAMAGE BLOCK: 20\"},{\"2\" : \"RANGED DAMAGE BLOCK: 10\"},{\"3\" : \"CREEP BLOCK CHANCE: 53%\"}]
+			},
+			{
+				\"id\": 72,
+				\"name\": \"item_recipe_bracer\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"+ 6 Strength\"},{\"1\" : \"+ 3 Agility\"},{\"2\" : \"+ 3 Intelligence\"}]
+			},
+			{
+				\"id\": 73,
+				\"name\": \"item_bracer\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"+ 6 Strength\"},{\"1\" : \"+ 3 Agility\"},{\"2\" : \"+ 3 Intelligence\"}]
+			},
+			{
+				\"id\": 264,
+				\"name\": \"item_banana\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 74,
+				\"name\": \"item_recipe_wraith_band\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"+ 6 Agility\"},{\"1\" : \"+ 3 Intelligence\"},{\"2\" : \"+ 3 Strength\"}]
+			},
+			{
+				\"id\": 75,
+				\"name\": \"item_wraith_band\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"+ 6 Agility\"},{\"1\" : \"+ 3 Intelligence\"},{\"2\" : \"+ 3 Strength\"}]
+			},
+			{
+				\"id\": 76,
+				\"name\": \"item_recipe_null_talisman\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"+ 6 Intelligence\"},{\"1\" : \"+ 3 Agility\"},{\"2\" : \"+ 3 Strength\"}]
+			},
+			{
+				\"id\": 77,
+				\"name\": \"item_null_talisman\",
+				\"desc\" : \"\",
+				\"stats\" : [{\"0\" : \"+ 6 Intelligence\"},{\"1\" : \"+ 3 Agility\"},{\"2\" : \"+ 3 Strength\"}]
+			},
+			{
+				\"id\": 78,
+				\"name\": \"item_recipe_mekansm\",
+				\"desc\" : \" Heals 250 health and gives +2 armor to allied units in a 900 radius. Passive: Mekansm Aura - Grants 4 health regeneration to allied units in a 900 radius.\",
+				\"stats\" : [{\"0\" : \"+ 5 All Attributes\"},{\"1\" : \"+ 5 Armor\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 79,
+				\"name\": \"item_mekansm\",
+				\"desc\" : \" Heals 250 health and gives +2 armor to allied units in a 900 radius. Passive: Mekansm Aura - Grants 4 health regeneration to allied units in a 900 radius.\",
+				\"stats\" : [{\"0\" : \"+ 5 All Attributes\"},{\"1\" : \"+ 5 Armor\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 80,
+				\"name\": \"item_recipe_vladmir\",
+				\"desc\" : \"Vladmir\'s Aura - Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.\",
+				\"stats\" : [{\"0\" : \"AURA MELEE LIFESTEAL: 15%\"},{\"1\" : \"AURA RANGED LIFESTEAL: 10%\"},{\"2\" : \"AURA RADIUS: 900\"}]
+			},
+			{
+				\"id\": 81,
+				\"name\": \"item_vladmir\",
+				\"desc\" : \"Vladmir\'s Aura - Grants lifesteal, health regeneration, mana regeneration, bonus attack damage, and armor to allies in a 900 radius. The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.\",
+				\"stats\" : [{\"0\" : \"AURA MELEE LIFESTEAL: 15%\"},{\"1\" : \"AURA RANGED LIFESTEAL: 10%\"},{\"2\" : \"AURA RADIUS: 900\"}]
+			},
+			{
+				\"id\": 84,
+				\"name\": \"item_flying_courier\",
+				\"desc\" : \"Upgrades your team\'s Animal Courier to a Flying Courier, granting it swift, unobstructed movement to carry items to and from your team\'s base.\",
+				\"stats\" : [{\"0\" : \"\"},{\"1\" : \"\"},{\"2\" : \"\"}]
+			},
+			{
+				\"id\": 85,
+				\"name\": \"item_recipe_buckler\",
+				\"desc\" : \"Armor Bonus - Gives +2 armor to all allied units in a 900 radius. Lasts 25 seconds on heroes, 30 seconds on units. \",
+				\"stats\" : [{\"0\" : \"+ 5 Armor\"},{\"1\" : \"+ 2 All Attributes\"}]
+			},
+			{
+				\"id\": 86,
+				\"name\": \"item_buckler\",
+				\"desc\" : \"Armor Bonus - Gives +2 armor to all allied units in a 900 radius. Lasts 25 seconds on heroes, 30 seconds on units. \",
+				\"stats\" : [{\"0\" : \"+ 5 Armor\"},{\"1\" : \"+ 2 All Attributes\"}]
+			},
+			{
+				\"id\": 87,
+				\"name\": \"item_recipe_ring_of_basilius\",
+				\"desc\" : \"Basilius Aura - Grants mana regeneration and armor in a 900 area of effect.\",
+				\"stats\" : [{\"0\" : \"AURA MANA REGEN: 0.65\"},{\"1\" : \"AURA BONUS ARMOR: 2\"}]
+			},
+			{
+				\"id\": 88,
+				\"name\": \"item_ring_of_basilius\",
+				\"desc\" : \"Basilius Aura - Grants mana regeneration and armor in a 900 area of effect.\",
+				\"stats\" : [{\"0\" : \"AURA MANA REGEN: 0.65\"},{\"1\" : \"AURA BONUS ARMOR: 2\"}]
+			},
+			{
+				\"id\": 89,
+				\"name\": \"item_recipe_pipe\",
+				\"desc\" : \"Barrier - Gives a shield that blocks 400 spell damage to all allies in a 900 radius.\",
+				\"stats\" : [{\"0\" : \"+ 8 HP Regeneration\"},{\"1\" : \"+ 30% Spell Resistance\"},{\"2\" : \"AURA HEALTH REGEN: 4\"}]
+			},
+			{
+				\"id\": 90,
+				\"name\": \"item_pipe\",
+				\"desc\" : \"Barrier - Gives a shield that blocks 400 spell damage to all allies in a 900 radius.\",
+				\"stats\" : [{\"0\" : \"+ 8 HP Regeneration\"},{\"1\" : \"+ 30% Spell Resistance\"},{\"2\" : \"AURA HEALTH REGEN: 4\"}]
+			},
+			{
+				\"id\": 91,
+				\"name\": \"item_recipe_urn_of_shadows\",
+				\"desc\" : \"Soul Release - Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower.Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge.\",
+				\"stats\" : [{\"0\" : \"+ 50% Mana Regeneration\"},{\"1\" : \"+ 6 Strength\"},{\"2\" : \"RELEASE ALLY TOTAL HEAL: 400\"}]
+			},
+			{
+				\"id\": 92,
+				\"name\": \"item_urn_of_shadows\",
+				\"desc\" : \"Soul Release - Heals health over time to friendly units, but deals pure damage over time to enemy units. The healing effect is lost if the affected ally takes damage from an enemy hero or tower.Gains charges every time an enemy hero dies within 1400 units. Only the closest Urn to the dying hero will gain a charge.\",
+				\"stats\" : [{\"0\" : \"+ 50% Mana Regeneration\"},{\"1\" : \"+ 6 Strength\"},{\"2\" : \"RELEASE ALLY TOTAL HEAL: 400\"}]
+			},
+			{
+				\"id\": 93,
+				\"name\": \"item_recipe_headdress\",
+				\"desc\" : \" Regeneration Aura - Restores health to allies in a 900 unit radius.\",
+				\"stats\" : [{\"0\" : \"+ 2 All Attributes\"},{\"1\" : \"AURA HEALTH REGEN: 3\"},{\"2\" : \"AURA REGEN RADIUS: 900\"}]
+			},
+			{
+				\"id\": 94,
+				\"name\": \"item_headdress\",
+				\"desc\" : \" Regeneration Aura - Restores health to allies in a 900 unit radius.\",
+				\"stats\" : [{\"0\" : \"+ 2 All Attributes\"},{\"1\" : \"AURA HEALTH REGEN: 3\"},{\"2\" : \"AURA REGEN RADIUS: 900\"}]
+			},
+			{
+				\"id\": 95,
+				\"name\": \"item_recipe_sheepstick\",
+				\"desc\" : \"Turns a target unit into a harmless critter for 3.5 seconds. Instantly destroys illusions. \",
+				\"stats\" : [{\"0\" : \"+ 10 Strength\"},{\"1\" : \"+ 10 Agility\"},{\"2\" : \"+ 35 Intelligence\"}]
+			},
+			{
+				\"id\": 96,
+				\"name\": \"item_sheepstick\",
+				\"desc\" : \"Turns a target unit into a harmless critter for 3.5 seconds. Instantly destroys illusions. \",
+				\"stats\" : [{\"0\" : \"+ 10 Strength\"},{\"1\" : \"+ 10 Agility\"},{\"2\" : \"+ 35 Intelligence\"}]
+			},
+			{
+				\"id\": 97,
+				\"name\": \"item_recipe_orchid\",
+				\"desc\" : \"Silences the target unit for 5.0 seconds. At the end of the silence, 30.0% of the damage received while silenced is inflicted as bonus magical damage. \",
+				\"stats\" : [{\"0\" : \"+ 25 Intelligence\"},{\"1\" : \"+ 30 Attack Speed\"},{\"2\" : \"+ 30 Damage\"}]
+			},
+			{
+				\"id\": 98,
+				\"name\": \"item_orchid\",
+				\"desc\" : \"Silences the target unit for 5.0 seconds. At the end of the silence, 30.0% of the damage received while silenced is inflicted as bonus magical damage. \",
+				\"stats\" : [{\"0\" : \"+ 25 Intelligence\"},{\"1\" : \"+ 30 Attack Speed\"},{\"2\" : \"+ 30 Damage\"}]
+			},
+			{
+				\"id\": 245,
+				\"name\": \"item_recipe_bloodthorn\",
+				\"desc\" : \" Silences a target for 5.0 seconds and amplifies the damage it takes by 30.0%. All attacks on the silenced target will have True Strike and land a crit on impact. Passive: Critical Strike - Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings. \",
+				\"stats\" : [{\"0\" : \"+ 25 Intelligence\"},{\"1\" : \"+ 30 Attack Speed\"},{\"2\" : \"+ 60 Damage\"}]
+			},
+			{
+				\"id\": 250,
+				\"name\": \"item_bloodthorn\",
+				\"desc\" : \" Silences a target for 5.0 seconds and amplifies the damage it takes by 30.0%. All attacks on the silenced target will have True Strike and land a crit on impact. Passive: Critical Strike - Grants each attack a chance to deal additional damage. Critical Strike does not work against buildings. \",
+				\"stats\" : [{\"0\" : \"+ 25 Intelligence\"},{\"1\" : \"+ 30 Attack Speed\"},{\"2\" : \"+ 60 Damage\"}]
+			}
+		]
+}</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string name="HERO_JSON">{\"heroes\":[
+
+  {
+
+   \"hero_id\" : \"1\",
+
+   \"hero_name\" : \"Antimage\",
+
+   \"hero_desc\" : \"Antimage is a fast melee Agility Carry with an emphasis on disabling and killing high-mana enemies.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Mana Break\",
+
+     \"ability_2\" : \"Blink\",
+
+     \"ability_3\" : \"Spell Shield\",
+
+     \"ability_4\" : \"Mana Void\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Burns an opponent\'s mana on each attack. Mana Break deals 60% of the mana burned as damage to the target.\",
+
+    \"ability_2_desc\" : \"Short distance teleportation that allows Antimage to move in and out of combat.\",
+
+    \"ability_3_desc\" : \"Increases Antimage\'s resistance to magic damage.\",
+
+    \"ability_4_desc\" : \"For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies. The main target is also mini-stunned.\"
+
+  },
+
+    \"role\" : \"Carry\"
+
+  },
+{
+
+   \"hero_id\" : \"2\",
+
+   \"hero_name\" : \"Abbadon\",
+
+
+   \"hero_desc\" : \"There was bitterness within the House Avernus. Elders and young alike accusing him of neglecting his responsibilities. But all such accusations stopped when Abaddon rode into battle, and they saw how the powers of the mist had given him mastery over life and death beyond those of any lord the House had ever known.\"
+
+
+   ,\"abilities\" : {
+
+     \"ability_1\" : \"Mist Coil\",
+
+     \"ability_2\" : \"Aphotic Shield\",
+
+     \"ability_3\" : \"Curse of Avernus\",
+
+     \"ability_4\" : \"Borrowed Time\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Abaddon releases a coil of deathly mist that can damage an enemy unit or heal a friendly unit at the cost of some of Abaddon\'s health.\",
+
+    \"ability_2_desc\" : \"Summons dark energies around an ally unit, creating a shield that absorbs a set amount of damage before expiring. When the shield is destroyed it will burst and deal damage equal to the amount it could absorb to an area around it. Removes certain types of negative buffs and stuns on cast.\",
+
+    \"ability_3_desc\" : \"Abaddon strikes an enemy with chilling curse on each attack, causing all units who attack the slowed enemy to gain increased movement speed, along with faster attack speed, for a limited time.\",
+
+    \"ability_4_desc\" : \"When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will automatically activate if your health falls below 400. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Support\"
+
+  },
+
+
+ {
+
+   \"hero_id\" : \"3\",
+
+   \"hero_name\" : \"Alchemist\",
+
+   \"hero_desc\" : \"The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy\"
+
+   ,\"abilities\" : {
+
+     \"ability_1\" : \"Acid Spray\",
+
+     \"ability_2\" : \"Unstable Concoction\",
+
+     \"ability_3\" : \"Greevil\'s Greed\",
+
+     \"ability_4\" : \"Chemical Rage\"
+
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Sprays high pressure acid across a target area. Enemy units who step across the contaminated terrain take damage per second and have their armor reduced.\",
+
+    \"ability_2_desc\" : \"Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. After 5 seconds, the brew reaches its maximum damage and stun time. However, after 5.5 seconds, the concoction will explode on Alchemist himself if not thrown.\",
+
+    \"ability_3_desc\" : \"Alchemist synthesizes additional gold from his enemies and bounty runes. With each kill, Alchemist earns base bonus gold and extra bonus gold. If Alchemist kills another unit which yields gold within the next 30 seconds, an additional instance of Extra Bonus Gold is added to the total. Additionally, causes bounty runes to yield 3 times their normal gold.\",
+
+    \"ability_4_desc\" : \"Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing movement speed and regeneration.\"
+
+  },
+
+    \"role\" : \"Carry\"
+
+
+ },
+
+ {
+
+   \"hero_id\" : \"4\",
+
+   \"hero_name\" : \"Ancient Apparition\",
+
+   \"hero_desc\" : \"Kaldr, the Ancient Apparition, is an image projected from outside time. He springs from the cold, infinite void that both predates the universe and awaits its end.\"
+
+    ,\"abilities\" : {
+
+     \"ability_1\" : \"Cold Feet\",
+
+     \"ability_2\" : \"Ice Vortex\",
+
+     \"ability_3\" : \"Chilling Touch\",
+
+     \"ability_4\" : \"Ice Blast\"
+
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Places a frozen hex on an enemy unit that deals damage over time, but can be dispelled by moving away from the initial cast point. If the enemy unit doesn\'t move outside of the given range, it will be stunned and frozen in place after 4 seconds.\",
+
+    \"ability_2_desc\" : \"Creates a vortex of icy energy that slows movement speed and increases magic damage done in its range. Lasts 16 seconds.\",
+
+    \"ability_3_desc\" : \"A frigid gust enchants allied heroes, granting them bonus magical damage for a given number of physical attacks, while slowing their attack speed slightly. Ancient Apparition always receives the buff. Lasts 30 seconds.\",
+
+    \"ability_4_desc\" : \"Launches a tracer toward any location on the battlefield, which must be triggered again to mark the area to be blasted by a damaging explosion of hail. The further the tracer travels, the larger the explosion will be. Enemies caught in the explosion, or who touch the icy ball of hail as it travels, are Frostbitten, taking damage and prevented from regenerating or healing. If a Frostbitten unit\'s health drops below a certain percentage, they will instantly shatter. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Support\"
+ },
+
+
+
+ {
+
+   \"hero_id\" : \"5\",
+
+   \"hero_name\" : \"Arc Warden\",
+
+   \"hero_desc\" : \"Before the beginning of all, there existed a presence: a primordial mind, infinite, awesome, and set to inscrutable purpose. As the universe thundered into being, this mind was fragmented and scattered.\"
+
+
+   ,\"abilities\" : {
+
+     \"ability_1\" : \"Flux\",
+
+     \"ability_2\" : \"Magnetic Field\",
+
+     \"ability_3\" : \"Spark Wraith\",
+
+     \"ability_4\" : \"Tempest Double\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Infuses a lone enemy unit with swirling, volatile energy, slowing its movement speed and dealing damage over time. The effect is muted if another enemy unit is near the target.\",
+
+    \"ability_2_desc\" : \"Generates a circular distortion field of magnetic energy that protects allied heroes and buildings within it by evading attacks coming from outside the field.\",
+
+    \"ability_3_desc\" : \"Summons a Spark Wraith that slowly materializes and patrols a targeted area until an enemy comes within its range. Once a target has been found the wraith fuses with them, dealing magical damage and purging the unit.\",
+
+    \"ability_4_desc\" : \"Briefly refocusing its fractured elements into a single form, the Arc Warden is able to create a perfect electrical duplication of itself. The duplicate can use all of Arc Warden\'s current items and spells, except items that drop on death. The duplicate has seperate item and ability cooldowns.\"
+  },
+
+    \"role\" : \"Carry\"
+
+
+ },
+
+
+
+
+ {
+
+   \"hero_id\" : \"6\",
+
+   \"hero_name\" : \"Axe\",
+
+   \"hero_desc\" : \"As a grunt in the Army of Red Mist, Mogul Khan set his sights on the rank of Red Mist General. In battle after battle he proved his worth through gory deed.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Berserker\'s Call\",
+
+     \"ability_2\" : \"Battle Hunger\",
+
+     \"ability_3\" : \"Counter Helix\",
+
+     \"ability_4\" : \"Culling Blade\"
+
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration.\",
+
+    \"ability_2_desc\" : \"Enrages an enemy unit, causing it to be slowed and take damage over time until it kills another unit or the duration ends. Axe gains movement speed for each unit affected with Battle Hunger.\",
+
+    \"ability_3_desc\" : \"When attacked, Axe performs a helix counter attack, dealing pure damage to all nearby enemies.\",
+
+    \"ability_4_desc\" : \"Axe spots a weakness and strikes, instantly killing an enemy unit with low health, or dealing moderate damage otherwise. When an enemy hero is killed with Culling Blade, its cooldown is reset, and Axe and nearby allied units gain bonus movement speed. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Initiator\"
+
+
+ },
+
+
+
+ {
+
+   \"hero_id\" : \"7\",
+
+   \"hero_name\" : \"Bane\",
+
+   \"hero_desc\" : \"When the gods have nightmares, it is Bane Elemental who brings them. Also known as Atropos, Bane was born from the midnight terrors of the goddess Nyctasha.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Enfeeble\",
+
+     \"ability_2\" : \"Brain Sap\",
+
+     \"ability_3\" : \"Nightmare\",
+
+     \"ability_4\" : \"Fiend\'s Grip\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Weakens an enemy unit, reducing its physical damage. Lasts 20 seconds.\",
+
+    \"ability_2_desc\" : \"Feasts on the vital energies of an enemy unit, healing Bane and dealing damage.\",
+
+    \"ability_3_desc\" : \"Puts the target enemy or friendly Hero to sleep and deals damage per second. Sleeping units are awakened when attacked, but the Nightmare passes to the attacking unit. The nightmared unit instantly wakes up if it takes damage.\",
+
+    \"ability_4_desc\" : \"CHANNELED : Grips an enemy unit, disabling it and causing heavy damage over time, while stealing mana every second based on the unit\'s maximum mana. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Support\"
+
+
+ },
+
+
+
+  {
+
+   \"hero_id\" : \"8\",
+
+   \"hero_name\" : \"Batrider\",
+
+   \"hero_desc\" : \"There is no such thing as harmony among the creatures of the Yama Raskav Jungle. By bite, or claw, or pincer, or hoof, even the slightest sign of weakness means a swift death.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Sticky Napalm\",
+
+     \"ability_2\" : \"Flamebreak\",
+
+     \"ability_3\" : \"Firefly\",
+
+     \"ability_4\" : \"Flaming Lasso\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Drenches an area in sticky oil, amplifying damage from Batrider\'s attacks and abilities and slowing the movement speed and turn rate of enemies in the area. Additional casts of Sticky Napalm continue to increase damage, up to 10 stacks. The extra damage is halved against creeps.\",
+
+    \"ability_2_desc\" : \"Hurls an explosive cocktail that explodes when it reaches the target location, knocking back, briefly stunning, and dealing damage over time to enemies in the area.\",
+
+    \"ability_3_desc\" : \"Batrider takes to the skies, laying down a trail of flames from the air. The fire damages any enemies it touches, and destroys trees below Batrider. While flying, Batrider gains unobstructed movement and vision.\",
+
+    \"ability_4_desc\" : \"Lassoes an enemy and drags them in Batrider\'s wake. Victims cannot be dragged over impassable terrain. Dragged units cannot move, attack, or use abilities. Teleporting or blinking will break the lasso. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Initiator\"
+
+  },
+
+
+
+{
+
+   \"hero_id\" : \"9\",
+
+   \"hero_name\" : \"Beastmaster\",
+
+   \"hero_desc\" : \"Karroch was born a child of the stocks. His mother died in childbirth; his father, a farrier for the Last King of Slom, was trampled to death when he was five.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Wild Axes\",
+
+     \"ability_2\" : \"Call of the Wild: Hawk\",
+
+     \"ability_3\" : \"Call of the Wild: Boar\",
+
+     \"ability_4\" : \"Primal Roar\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Beastmaster sends his axes flying and calls them home again, slicing through enemy units and trees along their path. Each axe can hit an enemy once.\",
+
+    \"ability_2_desc\" : \"Beastmaster calls forth a watchful Hawk to scout the battlefield. At level 3 and beyond, the hawk can become invisible after being still for 4 seconds.\",
+
+    \"ability_3_desc\" : \"Beastmaster calls a powerful Boar to stalk the battlefield, capable of spitting poison at enemies to slow their movement and attack speed.\",
+
+    \"ability_4_desc\" : \"Beastmaster lets loose a deafening roar that stuns, and shoves open, a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Initiator\"
+
+  },
+
+
+
+{
+
+   \"hero_id\" : \"10\",
+
+   \"hero_name\" : \"Bloodseeker\",
+
+   \"hero_desc\" : \"Strygwyr the Bloodseeker is a ritually sanctioned hunter, Hound of the Flayed Twins, sent down from the mist-shrouded peaks of Xhacatocatl in search of blood.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Bloodrage\",
+
+     \"ability_2\" : \"Blood Rite\",
+
+     \"ability_3\" : \"Thirst\",
+
+     \"ability_4\" : \"Rupture\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Drives a unit into a bloodthirsty rage during which a unit deals, and takes, increased damage. Units affected by Bloodrage will be healed for a percentage of the max health of any units they kill. Units affected by Bloodrage when killed will heal a percentage of their max health to their killer.\",
+
+    \"ability_2_desc\" : \"Bloodseeker baptizes an area in sacred blood. After 3 seconds the ritual completes, causing any enemies caught in the area to take damage and become silenced.\",
+
+    \"ability_3_desc\" : \"Bloodseeker is invigorated by the wounds of his enemies, gaining bonus movement speed and attack damage whenever an enemy hero\'s health falls below 75%, with the bonuses increasing as their health falls further. If an enemy hero\'s health falls below 25%, he will also gain vision and True Sight of that hero. Bonuses stack per hero.\",
+
+    \"ability_4_desc\" : \"Causes an enemy unit\'s skin to rupture. If the unit moves, it takes a percentage of the distance traveled as damage. The damage is dealt through spell immunity. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Carry\"
+
+  },
+
+
+
+{
+
+   \"hero_id\" : \"11\",
+
+   \"hero_name\" : \"Bounty Hunter\",
+
+   \"hero_desc\" : \"When the hunted tell tales of Gondar the Bounty Hunter, none are sure of which are true. In whispered tones they say he was abandoned as a kit, learning his skill in tracking as a matter of simple survival.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Shuriken Toss\",
+
+     \"ability_2\" : \"Jinada\",
+
+     \"ability_3\" : \"Shadow Walk\",
+
+     \"ability_4\" : \"Track\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Hurls a deadly shuriken at an enemy unit, dealing damage and mini-stunning the target. The shuriken will bounce between any Tracked units who are within a 1200 radius of each other.\",
+
+    \"ability_2_desc\" : \"Bounty Hunter plans his next hit, passively adding a critical strike and maim to his next attack.\",
+
+    \"ability_3_desc\" : \"Bounty Hunter becomes invisible and gains the ability to move through other units until he attacks or uses an ability. If he breaks the invisibility with an attack, that attack will deal bonus damage.\",
+
+    \"ability_4_desc\" : \"Tracks an enemy hero, granting True Sight of the target, and information on how much gold it is carrying. Allies near the hunted are granted bonus movement speed. If the target dies, Bounty Hunter and nearby heroes collect a bonus bounty of gold.\"
+
+  },
+
+    \"role\" : \"Melee - Escape - Nuker\"
+
+  },
+
+
+
+{
+
+   \"hero_id\" : \"12\",
+
+   \"hero_name\" : \"Brewmaster\",
+
+   \"hero_desc\" : \"Deep in the Wailing Mountains, in a valley beneath the Ruined City, the ancient Order of the Oyo has for centuries practiced its rites of holy reverie, communing with the spirit realm in grand festivals of drink. Born to a mother\'s flesh by a Celestial father, the youth known as Mangix was the first to grow up with the talents of both lineages.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Thunder Clap\",
+
+     \"ability_2\" : \"Drunken Haze\",
+
+     \"ability_3\" : \"Drunken Brawler\",
+
+     \"ability_4\" : \"Primal Split\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Slams the ground, dealing damage and slowing the movement speed and attack rate of nearby enemy land units.\",
+
+    \"ability_2_desc\" : \"Drenches a small area in alcohol, causing their movement speed to be reduced, and causing their attacks to have a chance to miss.\",
+
+    \"ability_3_desc\" : \"Gives a chance to avoid attacks and to deal critical damage. Drunken Brawler will always trigger if you have not attacked, or have not been attacked, in the last several seconds. Stacks diminishingly with other sources of Evasion.\",
+
+    \"ability_4_desc\" : \"Splits Brewmaster into elements, forming 3 specialized warriors, adept at survival. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Initiator\"
+
+  },
+
+
+
+{
+
+   \"hero_id\" : \"13\",
+
+   \"hero_name\" : \"Bristleback\",
+
+   \"hero_desc\" : \"Never one to turn his back on a fight, Rigwarl was known for battling the biggest, meanest scrappers he could get his hands on. Christened Bristleback by the drunken crowds, he waded into backroom brawls in every road tavern between Slom and Elze, until his exploits finally caught the eye of a barkeep in need of an enforcer.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Viscious Nasal Goo\",
+
+     \"ability_2\" : \"Quill Spray\",
+
+     \"ability_3\" : \"Bristleback\",
+
+     \"ability_4\" : \"Warpath\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Covers a target in snot, causing it to have reduced armor and movement speed. Multiple casts stack and refresh the duration. Upgradable by Aghanim\'s Scepter.\",
+
+    \"ability_2_desc\" : \"Sprays enemy units with quills dealing damage in an area of effect around Bristleback. Deals bonus damage for every time a unit was hit by Quill Spray in the last 14 seconds.\",
+
+    \"ability_3_desc\" : \"Bristleback takes less damage if hit on the sides or rear. If Bristleback takes 210 damage from the rear, he releases a Quill Spray of the current level.\",
+
+    \"ability_4_desc\" : \"Bristleback works himself up into a fury every time he casts a spell, increasing his movement speed and damage. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Carry\"
+
+  },
+
+
+
+{
+
+   \"hero_id\" : \"14\",
+
+   \"hero_name\" : \"Broodmother\",
+
+   \"hero_desc\" : \"For centuries, Black Arachnia the Broodmother lurked in the dark lava tubes beneath the smoldering caldera of Mount Pyrotheos, raising millions of spiderlings in safety before sending them to find prey in the wide world above.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Spawn Spiderlings\",
+
+     \"ability_2\" : \"Spin Web\",
+
+     \"ability_3\" : \"Incapacitating Bite\",
+
+     \"ability_4\" : \"Insatiable Hunger\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Broodmother injects her young into an enemy unit, dealing damage. The spiderlings will hatch if the target is killed while under this influence.\",
+
+    \"ability_2_desc\" : \"Spins a large web that renders Broodmother invisible, grants a passive movement speed increase, gives free movement, and boosts regeneration while in its vicinity. Spin Web charges restore every 40 seconds. If damage is taken, free movement is disabled and the movement speed increase is halved for 6 seconds. Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears.\",
+
+    \"ability_3_desc\" : \"Broodmother\'s venom cripples enemy units, causing her attacks to slow and giving the affected unit a chance to miss its attacks.\",
+
+    \"ability_4_desc\" : \"A violent lust for vital fluids increases Broodmother\'s attack damage and gives her a vampiric attack.\"
+
+  },
+
+    \"role\" : \"Carry\"
+
+  },
+
+
+
+
+  {
+
+   \"hero_id\" : \"15\",
+
+   \"hero_name\" : \"Centaur Warrunner\",
+
+   \"hero_desc\" : \"It\'s said that a centaur\'s road is paved with the corpses of the fallen. For the one called Warrunner, it has been a long road indeed. To outsiders, the four-legged clans of Druud are often mistaken for simple, brutish creatures.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Hoof Stomp\",
+
+     \"ability_2\" : \"Double Edge\",
+
+     \"ability_3\" : \"Return\",
+
+     \"ability_4\" : \"Stampede\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Slams the ground, stunning and damaging nearby enemy units.\",
+
+    \"ability_2_desc\" : \"Centaur strikes a mighty blow at melee range, damaging both himself and a small area around the target. Centaur cannot die from Double Edge.\",
+
+    \"ability_3_desc\" : \"Centaur counters every attack, damaging the attacker based on a percentage of Centaur\'s strength.\",
+
+    \"ability_4_desc\" : \"Centaur leads all allies into a vicious charge causing them to move through units at max speed and stop any enemy units they trample. Trampled enemies take damage based on Centaur Warrunner\'s strength. Each enemy can be trampled once. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"\Initiator\"
+
+  },
+
+
+
+  {
+
+   \"hero_id\" : \"16\",
+
+   \"hero_name\" : \"Chaos Knight\",
+
+   \"hero_desc\" : \"The veteran of countless battles on a thousand worlds, Chaos Knight hails from a far upstream plane where the fundamental laws of the universe have found sentient expression.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Chaos Bolt\",
+
+     \"ability_2\" : \"Reality Rift\",
+
+     \"ability_3\" : \"Chaos Strike\",
+
+     \"ability_4\" : \"Phantasm\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage.\",
+
+    \"ability_2_desc\" : \"Teleports you, any images you have and the target unit to a random point along the line between the two of you. Gives you bonus attack damage for one attack.\",
+
+    \"ability_3_desc\" : \"Each of Chaos Knight\'s attacks has a chance to deal bonus damage and reduce the target\'s armor by 5 for 8 seconds.\",
+
+    \"ability_4_desc\" : \"Summons several phantasmal copies of the Chaos Knight from alternate dimensions. There is a 50% chance an extra phantasm will be summoned. The phantasms deal full damage, but take double damage.\"
+
+  },
+
+    \"role\" : \"Carry\"
+
+  },
+
+
+
+  {
+
+   \"hero_id\" : \"17\",
+
+   \"hero_name\" : \"Chen\",
+
+   \"hero_desc\" : \"Born in the godless Hazhadal Barrens, Chen came of age among the outlaw tribes who eked out an existence in the shimmering heat of the desert.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Penitence\",
+
+     \"ability_2\" : \"Test of Faith\",
+
+     \"ability_3\" : \"Holy Persuasion\",
+
+     \"ability_4\" : \"Hand of God\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Forces an enemy unit to move slower and take more damage from attacks and spells.\",
+
+    \"ability_2_desc\" : \"Deals random damage to test an enemy unit\'s faith.\",
+
+    \"ability_3_desc\" : \"Chen takes control of an enemy or neutral creep. If the persuaded creep\'s base health is naturally below the health minimum, its base health will be raised to the health minimum. Upgradable by Aghanim\'s Scepter, allowing Chen to persuade Ancient Creeps. The number of Ancient Creeps that can be persuaded is based on the level of Hand of God.\",
+
+    \"ability_4_desc\" : \"Heals all allied heroes on the map as well as all units under Chen\'s control. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Support\"
+
+  },
+
+
+
+  {
+
+   \"hero_id\" : \"18\",
+
+   \"hero_name\" : \"Clinkz\",
+
+   \"hero_desc\" : \"At the base of the Bleeding Hills stretches a thousand-league wood, a place called The Hoven, where black pools gather the tarry blood of the uplands, and the king-mage Sutherex sits in benevolent rule.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Strafe\",
+
+     \"ability_2\" : \"Searing Arrows\",
+
+     \"ability_3\" : \"Skeleton Walk\",
+
+     \"ability_4\" : \"Death Pact\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Clinkz attacks with a barrage of arrows. Dramatically increases attack speed for a short time.\",
+
+    \"ability_2_desc\" : \"Imbues Clinkz\'s arrows with fire for extra damage.\",
+
+    \"ability_3_desc\" : \"Clinkz moves invisibly through units until the moment he attacks or uses an ability.\",
+
+    \"ability_4_desc\" : \"Clinkz consumes the target friendly or enemy creep, gaining a percent of its hitpoints as max health and damage\"
+
+  },
+
+    \"role\" : \"Carry\"
+
+  },
+
+
+
+  {
+
+   \"hero_id\" : \"19\",
+
+   \"hero_name\" : \"Clockwerk\",
+
+   \"hero_desc\" : \"Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk, has offset his diminutive stature through the application of gadgetry and wit.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Battery Assault\",
+
+     \"ability_2\" : \"Power Cogs\",
+
+     \"ability_3\" : \"Rocket Flare\",
+
+     \"ability_4\" : \"Hookshot\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"Discharges high powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun.\",
+
+    \"ability_2_desc\" : \"Forms a barrier of energized cogs around Clockwerk, trapping any units that are near. Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down. Cogs can be destroyed by enemy attacks, but Clockwerk can destroy them with just one.\",
+
+    \"ability_3_desc\" : \"Fires a global range flare that explodes over a given area, damaging enemies and providing vision for 10 seconds.\",
+
+    \"ability_4_desc\" : \"Fires a grappling device rapidly at the target location. If the hook hits a unit, Clockwerk launches himself into the target, stunning and dealing damage. Any enemies Clockwerk collides with along the way are damaged and stunned. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Initiator\"
+
+  },
+
+
+
+  {
+
+   \"hero_id\" : \"20\",
+
+   \"hero_name\" : \"Crystal Maiden\",
+
+   \"hero_desc\" : \"Born in a temperate realm, raised with her fiery older sister Lina, Rylai the Crystal Maiden soon found that her innate elemental affinity to ice created trouble for all those around her. Wellsprings and mountain rivers froze in moments if she stopped to rest nearby; ripening crops were bitten by frost, and fruiting orchards turned to mazes of ice and came crashing down, spoiled.\",
+
+   \"abilities\" : {
+
+     \"ability_1\" : \"Crystal Nova\",
+
+     \"ability_2\" : \"Frostbite\",
+
+     \"ability_3\" : \"Arcane Aura\",
+
+     \"ability_4\" : \"Freezing Field\"
+  },
+      \"abilities_desc\" :{
+
+    \"ability_1_desc\" : \"A burst of damaging frost slows enemy movement and attack rate in the targeted area.\",
+
+    \"ability_2_desc\" : \"Encases an enemy unit in ice, prohibiting movement and attack, while dealing 50 damage every half-second. Lasts 10 seconds on creeps level 6 or lower.\",
+
+    \"ability_3_desc\" : \"Gives additional mana regeneration to all friendly units on the map. This bonus is increased for Crystal Maiden.\",
+
+    \"ability_4_desc\" : \"CHANNELED : Surrounds Crystal Maiden with random icy explosions that slow enemies and deal massive damage. Lasts 10 seconds. Upgradable by Aghanim\'s Scepter.\"
+
+  },
+
+    \"role\" : \"Support\"
+
+  }
+]}</string>
 
 </resources>

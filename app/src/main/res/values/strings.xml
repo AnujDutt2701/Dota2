@@ -3,4 +3,24 @@
     <string name="loading">Loading</string>
     <string name="learn">Learn the basics</string>
     <string name="track">Track your progress</string>
+    <string name="title_activity_hero_detail">HeroDetailActivity</string>
+    <string name="what_is_dota">Dota 2 is played in matches between two five-player teams, each of which occupies a stronghold in a corner of the playing field. A team wins by destroying the Ancient building, located within the opposing stronghold. Each player controls one of 111 playable Hero characters that feature unique powers and styles of play. During a match, the player collects gold, items, and experience points for their Hero, while combating Heroes of the opposite team.</string>
+    <string name="action_settings">Settings</string>
+    <string name="learn_about_items">Learn about items</string>
+    <string name="learn_about_heroes">Learn about heroes</string>
+    <string name="learn_about_items_desc">Go through a brief explaination of all the items in Dota2 and help make your gaming experience easier.</string>
+    <string name="learn_about_heroes_desc">Go through a brief explaination of all the heroes in Dota2 and understand what each hero does.</string>
+    <string name="go">Go</string>
+    <string name="item_name_heading">Item name:</string>
+    <string name="item_cost_heading">Item cost:</string>
+    <string name="item_shop_heading">Shop:</string>
+    <string name="main_shop">Main shop</string>
+    <string name="hero_name_heading">Hero name:</string>
+    <string name="hero_role_heading">Hero role:</string>
+    <string name="hero_ability_1_heading">Ability 1:</string>
+    <string name="hero_ability_2_heading">Ability 2:</string>
+    <string name="hero_ability_3_heading">Ability 3:</string>
+    <string name="hero_ability_4_heading">Ability 4:</string>
+    <string name="item_desc_heading">Item description:</string>
+
 </resources>
